@@ -1,10 +1,31 @@
 body {
-  padding: 50px;
+  margin: 0px 0px 0px 0px;
+  padding:0px;
+  background:url("http://www.w3schools.com/w3css/img_ny.jpg")no-repeat 0 100px; ;
+  background-size: cover;
+  color: #996699;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+header{
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  background:white;
+  color: #996699;
+  }
+
+footer{
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  background: white;
+  color:#996699;
+  padding-bottom: 0px;
+ 
+  }
 
 a {
-  color: #00B7FF;
+  color: #996699;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight:bold;
 }
 
 .form-errors {

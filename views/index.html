@@ -2,24 +2,27 @@
 
 {% block header %}
   <header>
-    <h1>{{ title }} FTW</h1>
+    <h1><img src="https://athletics.ticketing.yale.edu/ArticleMedia/Images/Branding/yaleImages/logo.png" height="6%" width="6% alt="logo" />{{title}} FTW <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /> <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><a href="/about">About US</a> <a href="/events"> Events </a> </h1>
   </header>
 {% endblock %}
 
 {% block mainContent %}
-  <p>
-    Welcome to {{ title }}. {{tagline}}
+<p style="font-size:20px; text-align: center; color: black; font-weight:bold">
+       Explore our list of events
   </p>
-  <p>Here is our list of events</p>
-  <div style="border: 1px solid black">
+  <img src="http://i.imgur.com/pXjrQ.gif" height=300px width=300px id="image">  <img src="http://i.imgur.com/7pe2k.gif" height=300px width=300px id="image"> <img src="http://i.imgur.com/CJLrRqh.gif" height=300px width=300px id="image">  <img src="http://i.imgur.com/02KT9.gif" height=300px width=300px id="image">  
+ 
+  <div style="border: 1px solid black; color:black; font-weight: bold">
     {% include "fragments/events-list.html" %}
   </div>
-  <img id='logo' src="http://vignette2.wikia.nocookie.net/logopedia/images/e/ed/Yale_Bulldogs_Logo.png/revision/latest?cb=20130524010200">
-  <p>
-    Check out the <a href="/about">About us</a> page
-    as well as the <a href="/events">Events</a> page.
+  
+  <p style= "font-size:20px; text-align: center; color:#996699 ; font-style: italic ; font-weight: bold">
+    Live Life to the fullest!! Come join us in the fun
   </p>
-  <p>
-    <a id="new" href="/events/new">Create a new event</a>
+  <p style= "font-size:20px; text-align: center; color:black ; font-weight: bold">
+    <button><a id="new" href="/events/new">Create a new event</a></button>
+    <button><a href="/about">About us</a></button>
+    <button><a href="/events">Events</a></button>
   </p>
+  
 {% endblock %}
