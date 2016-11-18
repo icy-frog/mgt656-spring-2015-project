@@ -1,29 +1,29 @@
 body {
   margin: 0px 0px 0px 0px;
   padding:0px;
-  background:url("http://www.w3schools.com/w3css/img_ny.jpg")no-repeat 0 100px; ;
+  background:url("https://c1.staticflickr.com/3/2492/3882355899_46664c10a0_b.jpg")no-repeat 0 100px;
   background-size: cover;
-  color: #996699;
+  color: grey;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 header{
   text-align: left;
   margin: 0px 0px 0px 0px;
-  background:white;
-  color: #996699;
+  background:grey;
+  color: white;
   }
 
 footer{
   text-align: center;
   margin: 0px 0px 0px 0px;
-  background: white;
-  color:#996699;
+  background: grey;
+  color:white;
   padding-bottom: 0px;
  
   }
 
 a {
-  color: #996699;
+  color: white;
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-weight:bold;
 }
