@@ -12,32 +12,34 @@
       </ul>
     </div>
   {% endif %}
-
+<div style="background:grey;color:white;font-size:20px;width:50%">
+  <p style="text-align:center; font-weight:bold; font-size:24"> Fill Out the Form to create an event</p>
 	<form id="create-event" method="POST">
-    <label for="title">Event title:</label>
-    <input type="text" name="title">
+  <p> <label for="title">Event title:</label>
+    <input type="text" name="title" placeholder= "Event Title"></p> 
+  <p> <label for="location">Event location:</label>
+    <input type="text" name="location" placeholder= "Event Location"></p> 
     
-    <label for="location">Event location:</label>
-    <input type="text" name="location">
+  <p> <label for="image">Event image:</label>
+    <input type="text" name="image" placeholder= "Event image"> </p> 
     
-    <label for="image">Event image:</label>
-    <input type="text" name="image">
+  <p> <label for="year">Event year:</label>
+    <input type="text" name="year" placeholder= "Event Year"></p> 
     
-    <label for="year">Event year:</label>
-    <input type="text" name="year">
+  <p><label for="month">Event month:</label>
+    <input type="text" name="month" placeholder= "Event Month"></p>
     
-    <label for="month">Event month:</label>
-    <input type="text" name="month">
+  <p> <label for="day">Event day:</label>
+    <input type="text" name="day"placeholder= "Event Day"></p> 
     
-    <label for="day">Event day:</label>
-    <input type="text" name="day">
+  <p>  <label for="hour">Event hour:</label>
+    <input type="text" name="hour" placeholder= "Event Hour"> </p> 
     
-    <label for="hour">Event hour:</label>
-    <input type="text" name="hour">
-    
-    <label for="minute">Event minute:</label>
-    <input type="text" name="minute">
+  <p> <label for="minute">Event minute:</label>
+    <input type="text" name="minute" placeholder= "Event Minute"></p> 
+  <p style="text-align:center; font-weight:bold; font-size:24px"> <input type="submit" value="Submit"/> </p>
   </form>
+</div>
 {% endblock %}
 
 
