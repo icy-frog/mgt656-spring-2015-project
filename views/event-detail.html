@@ -1,13 +1,11 @@
 {% extends "layout.html" %}
-{% block header %}
-  <header>
-    <h1><img src="https://athletics.ticketing.yale.edu/ArticleMedia/Images/Branding/yaleImages/logo.png" height="6%" width="6% alt="logo" /> MGT 656 FTW <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /> <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" height="6%" width="6% alt="space" /><a href="/about">About US</a> <a href="/events"> Events </a> <a href="/"> Home </a> </h1>
-  </header>
-{% endblock %}
+
 
 {% block mainContent %}
-   <img src="{{event.image}}" id="image">
-   <h1 id="title">{{event.title}}</h1>
+<table style="background:black">
+    <tr>
+        <td><img src="{{event.image}}" id="image"></td>
+        <td><h1 id="title">{{event.title}}</h1>
   <p>When: <span id="date">{{event.date}}</span></p>
   <p>Where: <span id="location">{{event.location}}</span></p>
   <p>Who:</p>
@@ -17,7 +15,7 @@
         {% endfor %}  
   </ul>
   <p>Please come!</p>
-  {% if errors %}
+    {% if errors %}
   <div>
       <ul class="form-errors">
           {%for error in errors %}
@@ -30,5 +28,13 @@
       <input type="text" name="email" id="email" placeholder= "Your email"/>
       <input type="submit" value="Submit"/>
   </form>
+  </td>
+    </tr>
   
 {% endblock %}
+{% block footer %}
+      <footer style="position:absolute; bottom:0; height:100px">
+      <h1> <a href="/about">About US</a><img src="http://northeasternbankservices.com/wp-content/uploads/2013/08/grey-background.png" height="2%" width="2% alt="space" />  <a href="/events"> Events </a> <img src="http://northeasternbankservices.com/wp-content/uploads/2013/08/grey-background.png" height="2%" width="2% alt="space" /> <a href="/"> Home </a>  </h1>
+      <h1> MGT 656 FTW </h1>
+      </footer>
+    {% endblock %}
