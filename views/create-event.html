@@ -4,7 +4,7 @@
 
   {% if errors %}
     <div>
-      <p>Please correct the following errors!</p>
+      <p style="font-size:28px;text-align:left; font-weight:bold; color:red">Please correct the following errors!</p>
       <ul class="form-errors">
         {% for error in errors %}
           <li>{{error}}</li>
@@ -12,7 +12,7 @@
       </ul>
     </div>
   {% endif %}
-<div style="background:grey;color:black;font-size:20px;width:50%">
+<div style="background:black;color:white;font-size:20px;width:50%">
   <p style="text-align:center; font-weight:bold; font-size:24"> Fill Out the Form to create an event</p>
 	<form id="create-event" method="POST">
   <p> <label for="title">Event title:</label>
@@ -25,14 +25,14 @@
     <input type="text" name="image" placeholder= "Event image"> </p> 
     
   <p> <label for="year">Event year:</label>
-  <select name="year" id="year">
-    <option value="2015">2015</option>
-    <option value="2016">2016</option>
+  <select style="background:black" name="year", id="year">
+    <Option value="2015">2015</option>
+    <Option value="2016">2016</option>
   </select>
-  </p>
+  
   <p><label for="month">Event month:</label>
-    <select name="month" id="month" onchange ="" size="1">
-    <Option value="0">January</option>
+    <select style="background:black" name="month", id="month" onchange ="" size="1">
+    <Option  value="0">January</option>
     <Option value="1">February</option>
     <Option value="2">March</option>
     <Option value="3">April</option>
@@ -45,9 +45,9 @@
     <Option value="10">November</option>
     <Option value="11">December</option>
   </select>
-   </p> 
+    
   <p> <label for="day">Event day:</label>
-  <select name="day" id="day" onchange ="" size="1">
+  <select style="background:black" name="day", id="day" onchange ="" size="1">
     <Option value="0">0</option>
     <Option value="1">1</option>
     <Option value="2">2</option>
@@ -81,9 +81,9 @@
     <Option value="30">30</option>
     <Option value="31">31</option>
   </select>
-   </p> 
+    
   <p>  <label for="hour">Event hour:</label>
-  <select name="hour" id="hour" onchange ="" size="1">
+  <select style="background:black" name="hour", id="hour" onchange ="" size="1">
     <Option value="0">0</option>
     <Option value="1">1</option>
     <Option value="2">2</option>
@@ -109,14 +109,14 @@
     <Option value="22">22</option>
     <Option value="23">23</option>
   </select>
-  </p>
+  
   <p> <label for="minute">Event minute:</label>
-   <select name="minute" id="minute" onchange ="" size="1">
+   <select style="background:black" name="minute", id="minute" onchange ="" size="1">
     <Option value="0">00</option>
     <Option value="30">30</option>
   </select>
-  </p>  
-  <p style="text-align:center; font-weight:bold; font-size:24px"> <input type="submit" value="Submit"/> </p>
+    
+  <p style="text-align:center; font-weight:bold; font-size:24px; background:black"> <input type="submit" value="Submit"/> </p>
   </form>
 </div>
 {% endblock %}

@@ -1,24 +1,24 @@
 body {
   margin: 0px 0px 0px 0px;
-  background:url("https://c1.staticflickr.com/3/2492/3882355899_46664c10a0_b.jpg")no-repeat 0 100px;
+  background:url("https://static1.squarespace.com/static/56705192e0327ca7aa24caff/t/5682f78040667ab2825ce9bf/1451423617214/special.jpg?format=1500w")no-repeat 0 100px;
   background-size: cover;
   background-position: center;
   color: grey;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 header{
-  text-align: left;
-  margin: 0px 0px 0px 0px;
-  background:grey;
-  background-size: cover;
-  color: white;
+  text-align: left ;
+  margin: 0px 0px 0px 0px ;
+  background:black ;
+  background-size: cover ;
+  color: white ;
   }
 
 footer{
   
   text-align: center;
   margin: 0px 0px 0px 0px;
-  background: grey;
+  background: black;
   color:white;
   
   }
@@ -28,7 +28,20 @@ a {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-weight:bold;
 }
+p {
+  color: white;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight:bold;
+}
+h1 {
+  color: white;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight:bold;
+}
+
 
 .form-errors {
 	color: red;
+	font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight:bold;
 }

@@ -5,13 +5,13 @@
 <table style="background:black">
     <tr>
         <td><img src="{{event.image}}" id="image"></td>
-        <td><h1 id="title">{{event.title}}</h1>
+        <td><h1 style="color:white" id="title">{{event.title}}</h1>
   <p>When: <span id="date">{{event.date}}</span></p>
   <p>Where: <span id="location">{{event.location}}</span></p>
   <p>Who:</p>
   <ul id="attendees">
         {% for person in event.attending %}
-          <li> {{person}}</li>
+          <li style="color:white"> {{person}}</li>
         {% endfor %}  
   </ul>
   <p>Please come!</p>
@@ -33,8 +33,8 @@
   
 {% endblock %}
 {% block footer %}
-      <footer style="position:absolute; bottom:0; height:100px">
-      <h1> <a href="/about">About US</a><img src="http://northeasternbankservices.com/wp-content/uploads/2013/08/grey-background.png" height="2%" width="2% alt="space" />  <a href="/events"> Events </a> <img src="http://northeasternbankservices.com/wp-content/uploads/2013/08/grey-background.png" height="2%" width="2% alt="space" /> <a href="/"> Home </a>  </h1>
+      <footer style="position:absolute; bottom: 0; padding:0; margin: 0px 0px 0px 0px; height:130px; background-size:cover;align:center"">
+      <h1> <a href="/about">About US</a><img src="http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/08/Black-Background-12.jpg" height="2%" width="2% alt="space" />  <a href="/events"> Events </a> <img src="http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/08/Black-Background-12.jpg" height="2%" width="2% alt="space" /> <a href="/"> Home </a>  </h1>
       <h1> MGT 656 FTW </h1>
       </footer>
     {% endblock %}
