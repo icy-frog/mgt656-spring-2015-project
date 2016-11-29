@@ -12,11 +12,12 @@
       </ul>
     </div>
   {% endif %}
-<div style="background:grey;color:white;font-size:20px;width:50%">
+<div style="background:grey;color:black;font-size:20px;width:50%">
   <p style="text-align:center; font-weight:bold; font-size:24"> Fill Out the Form to create an event</p>
 	<form id="create-event" method="POST">
   <p> <label for="title">Event title:</label>
     <input type="text" name="title" placeholder= "Event Title"></p> 
+    
   <p> <label for="location">Event location:</label>
     <input type="text" name="location" placeholder= "Event Location"></p> 
     
@@ -24,19 +25,102 @@
     <input type="text" name="image" placeholder= "Event image"> </p> 
     
   <p> <label for="year">Event year:</label>
-    <input type="text" name="year" placeholder= "Event Year"></p> 
-    
+  <select name="year", id="year">
+    <Option> Choose Year </option>
+    <Option value=2015>2015</option>
+    <Option value=2016>2016</option>
+  </select>
+  
   <p><label for="month">Event month:</label>
-    <input type="text" name="month" placeholder= "Event Month"></p>
+    <select name="month", id="month" onchange ="" size="1">
+    <Option> Choose Month </option>
+    <Option value=0>January</option>
+    <Option value=1>February</option>
+    <Option value=2>March</option>
+    <Option value=3>April</option>
+    <Option value=4>May</option>
+    <Option value=5>June</option>
+    <Option value=6>July</option>
+    <Option value=7>August</option>
+    <Option value=8>September</option>
+    <Option value=9>October</option>
+    <Option value=10>November</option>
+    <Option value=11>December</option>
+  </select>
     
   <p> <label for="day">Event day:</label>
-    <input type="text" name="day"placeholder= "Event Day"></p> 
+  <select name="day", id="day" onchange ="" size="1">
+    <Option> Choose Day </option>
+    <Option value=0>0</option>
+    <Option value=1>1</option>
+    <Option value=2>2</option>
+    <Option value=3>3</option>
+    <Option value=4>4</option>
+    <Option value=5>5</option>
+    <Option value=6>6</option>
+    <Option value=7>7</option>
+    <Option value=8>8</option>
+    <Option value=9>9</option>
+    <Option value=10>10</option>
+    <Option value=11>11</option>
+    <Option value=12>12</option>
+    <Option value=13>13</option>
+    <Option value=14>14</option>
+    <Option value=15>15</option>
+    <Option value=16>16</option>
+    <Option value=17>17</option>
+    <Option value=18>18</option>
+    <Option value=19>19</option>
+    <Option value=20>20</option>
+    <Option value=21>21</option>
+    <Option value=22>22</option>
+    <Option value=23>23</option>
+    <Option value=24>24</option>
+    <Option value=25>25</option>
+    <Option value=26>26</option>
+    <Option value=27>27</option>
+    <Option value=28>28</option>
+    <Option value=29>29</option>
+    <Option value=30>30</option>
+    <Option value=31>31</option>
+  </select>
     
   <p>  <label for="hour">Event hour:</label>
-    <input type="text" name="hour" placeholder= "Event Hour"> </p> 
-    
+  <select name="hour", id="hour" onchange ="" size="1">
+    <Option> Choose hour in 24 hour format</option>
+    <Option value=0>0</option>
+    <Option value=1>1</option>
+    <Option value=2>2</option>
+    <Option value=3>3</option>
+    <Option value=4>4</option>
+    <Option value=5>5</option>
+    <Option value=6>6</option>
+    <Option value=7>7</option>
+    <Option value=8>8</option>
+    <Option value=9>9</option>
+    <Option value=10>10</option>
+    <Option value=11>11</option>
+    <Option value=12>12</option>
+    <Option value=13>13</option>
+    <Option value=14>14</option>
+    <Option value=15>15</option>
+    <Option value=16>16</option>
+    <Option value=17>17</option>
+    <Option value=18>18</option>
+    <Option value=19>19</option>
+    <Option value=20>20</option>
+    <Option value=21>21</option>
+    <Option value=22>22</option>
+    <Option value=23>23</option>
+  </select>
+  
   <p> <label for="minute">Event minute:</label>
-    <input type="text" name="minute" placeholder= "Event Minute"></p> 
+   <select name="minute", id="minute" onchange ="" size="1">
+    <Option> Choose minutes</option>
+    <Option value=0>00</option>
+    <Option value=30>30</option>
+  </select>
+    
   <p style="text-align:center; font-weight:bold; font-size:24px"> <input type="submit" value="Submit"/> </p>
   </form>
 </div>
